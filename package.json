@@ -1,0 +1,31 @@
+{
+  "name": "bootcamp-80-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "minifyCSS": "npx postcss src/css/styles.css > src/css/styles.min.css",
+    "transpilationJS": "babel src/js/index.js -d dist/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olexiy-repin/bootcamp-80-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Olexiy-repin/bootcamp-80-JS/issues"
+  },
+  "homepage": "https://github.com/Olexiy-repin/bootcamp-80-JS#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "cssnano": "^7.1.7",
+    "postcss": "^8.5.10",
+    "postcss-cli": "^11.0.1"
+  },
+  "browserslist": "defaults"
+}
