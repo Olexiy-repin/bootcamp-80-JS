@@ -22,7 +22,7 @@ axios.defaults.baseURL = 'https://api.unsplash.com';
 // };
 
 //~ getPhotosByQuery через axios()
-export const getPhotosByQuery = currentQuery => {
+export const getPhotosByQuery = async currentQuery => {
   const requestParams = {
     query: currentQuery,
     color: 'black_and_white',
@@ -31,7 +31,9 @@ export const getPhotosByQuery = currentQuery => {
     per_page: 12,
   };
 
-  return axios.get(`/search/photos`, { params: requestParams });
+  const { data } = await axios.get(`/search/photos`, { params: requestParams });
+
+  return data;
 };
 
 //~ getPhotosByQuery через fetch()

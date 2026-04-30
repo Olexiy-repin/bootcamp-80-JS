@@ -50,7 +50,7 @@ const onSearchFormSubmit = async event => {
 
     refs.preloader.classList.add('is-active');
 
-    const { data } = await getPhotosByQuery(userQuery);
+    const data = await getPhotosByQuery(userQuery);
 
     if (data.total === 0) {
       iziToast.error({
